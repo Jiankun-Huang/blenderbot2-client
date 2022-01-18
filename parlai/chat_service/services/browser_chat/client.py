@@ -41,7 +41,7 @@ class BrowserHandler(BaseHTTPRequestHandler):
         self.send_response(status_code)
         self.send_header('Content-type', 'text/html')
         self.end_headers()
-        server_endpoint = 'wss://master-blenderbot2-server-scy6500.endpoint.ainize.ai'
+        server_endpoint = 'wss://master-blenderbot2-server-jiankun-huang.endpoint.ainize.ai/'
         #if os.environ['SERVER_ENDPOINT']:
          #   server_endpoint = os.environ['SERVER_ENDPOINT']:
         content = WEB_HTML.format(STYLE_SHEET, FONT_AWESOME, server_endpoint)
